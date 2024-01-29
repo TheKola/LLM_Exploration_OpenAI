@@ -9,6 +9,9 @@ data/*
 data/database/*
 data/Vector_Database/*
 
+!data/database/.gitkeep
+!data/Vector_Database/.gitkeep
+
 .DS_Store
 .idea/
 
