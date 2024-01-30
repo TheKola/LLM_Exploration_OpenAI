@@ -11,6 +11,8 @@ from langchain.chains import ConversationalRetrievalChain
 from langchain.embeddings import SentenceTransformerEmbeddings
 from langchain.vectorstores import Chroma
 from langchain.prompts import PromptTemplate
+import json
+from output_praser import parse_response
 
 try:
     load_dotenv()
@@ -129,4 +131,7 @@ if user_query := st.chat_input(placeholder="Ask me anything about the company!")
         stream_handler = StreamHandler(st.empty())
         print("user_query :- ", user_query)
         response = qa_chain.run(user_query, callbacks=[retrieval_handler, stream_handler])
+        print("response : - ", response)
+        jsonResponse = parse_response(response)
+        st.json(jsonResponse)
 
