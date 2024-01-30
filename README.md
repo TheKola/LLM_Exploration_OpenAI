@@ -3,7 +3,7 @@
 ## Introduction
 This chatbot application provides information about companies based on their website content. Users can select a company and ask questions, with the chatbot extracting and analyzing information from the company's website to provide detailed responses.
 
-This project represents the first step in understanding how well Large Language Models (LLMs) can be utilized with The Data City's data, specifically website texts. More information about this research can be found  [here](https://thedatacity.sharepoint.com/:f:/s/TheDataCity/EpEHiVpxOytIg1F-A2FBgZUBVKvZRJaVYpeuZut3tOoy3A?e=IrXRGf) 
+This project represents the first step in understanding how well Large Language Models (LLMs) can be utilized with The Data City's data, specifically website texts. More information about this research can be found  [here](https://thedatacity.sharepoint.com/:w:/s/TheDataCity/EZ05n8QrgDhBthvy82tVjkwBGSUQyS5eAyjBUlx1lWahTg?e=aVBo7E) 
 
 ## Features
 - Select a company from the dropdown menu.
