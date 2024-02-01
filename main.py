@@ -97,7 +97,9 @@ with st.sidebar:
         st.error(f"Error loading company options: {e}")
 
     # st.write('You selected:', option)
-    # "[View the source code](https://github.com/)"
+        
+    jsonOutput = st.checkbox('JSON Response')
+    "[View the source code](https://github.com/TheDataCity/LLM_Exploration_OpenAI/tree/json_response)"
 
 if not option:
         st.info("Please select a company from the drop down menu")
@@ -120,6 +122,7 @@ except Exception as e:
     st.stop()
 
 avatars = {"human": "❓", "ai": "❄️"}
+
 for msg in msgs.messages:
     st.chat_message(avatars[msg.type]).write(msg.content)
 
@@ -132,6 +135,7 @@ if user_query := st.chat_input(placeholder="Ask me anything about the company!")
         print("user_query :- ", user_query)
         response = qa_chain.run(user_query, callbacks=[retrieval_handler, stream_handler])
         print("response : - ", response)
-        jsonResponse = parse_response(response)
-        st.json(jsonResponse)
+        if jsonOutput == True:
+            jsonResponse = parse_response(response)
+            st.json(jsonResponse)
 

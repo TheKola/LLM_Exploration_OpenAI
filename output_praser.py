@@ -10,7 +10,7 @@ def parse_response(query):
     model="gpt-3.5-turbo-1106",
     response_format={ "type": "json_object" },
     messages=[
-      {"role": "system", "content": "You are a helpful assistant designed to output JSON for the given text, the keys shouls be Orgainsation, Company Number, Registered Address, Other Adresss, Contact, Website, Social Media, Answer. The answer should be the exact text inputted. If any of the information is not available then leave that blank."},
+      {"role": "system", "content": "You are a helpful assistant designed to output JSON for the given text, the keys shouls be Orgainsation, Company Number, Registered Address, Other Adresss, Contact, Website, Social Media. If any of the information is not available then leave that blank."},
       {"role": "user", "content": query}
     ]
   )
