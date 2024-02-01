@@ -46,3 +46,4 @@ streamlit run main.py
 - Choose a company from the dropdown menu.
 - Enter your question in the chat input.
 - Chat with the chatbot to get information about the selected company.
+- Select the "JSON Response" option from the side menu to get the answer in JSON format.
