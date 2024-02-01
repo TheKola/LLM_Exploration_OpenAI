@@ -133,9 +133,11 @@ if user_query := st.chat_input(placeholder="Ask me anything about the company!")
         retrieval_handler = PrintRetrievalHandler(st.container())
         stream_handler = StreamHandler(st.empty())
         print("user_query :- ", user_query)
-        response = qa_chain.run(user_query, callbacks=[retrieval_handler, stream_handler])
-        print("response : - ", response)
         if jsonOutput == True:
+            response = qa_chain.run(user_query, callbacks=[retrieval_handler])
             jsonResponse = parse_response(response)
             st.json(jsonResponse)
+        else:
+            response = qa_chain.run(user_query, callbacks=[retrieval_handler, stream_handler])
+        print("response : - ", response)
 
