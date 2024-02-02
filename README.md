@@ -3,7 +3,7 @@
 ## Introduction
 This chatbot application provides information about companies based on their website content. Users can select a company and ask questions, with the chatbot extracting and analyzing information from the company's website to provide detailed responses.
 
-This project represents the first step in understanding how well Large Language Models (LLMs) can be utilized with The Data City's data, specifically website texts. More information about this research can be found  [here](https://thedatacity.sharepoint.com/:w:/s/TheDataCity/EZ05n8QrgDhBthvy82tVjkwBGSUQyS5eAyjBUlx1lWahTg?e=aVBo7E) 
+This project represents the first step in understanding how well Large Language Models (LLMs) can be utilized with The Data City's data, specifically website texts. More information about this research can be found  [here](docs/project.md) 
 
 ## Features
 - Select a company from the dropdown menu.
@@ -33,7 +33,7 @@ Note: The naming convention of the files should follow the format provided in th
 ## Creating the Vector Database
 To create the database and the option menu required for the application, run:
 ```shell
-python creatingOptionMenuAndVectorDb.py
+python creating_option_menu_and_vector_db.py
 ```
 This will create the vector database for each company and store it in the data/Vector_Database directory. A .csv file with all company names and numbers will be generated in the data directory.
 
@@ -46,4 +46,3 @@ streamlit run main.py
 - Choose a company from the dropdown menu.
 - Enter your question in the chat input.
 - Chat with the chatbot to get information about the selected company.
-- Select the "JSON Response" option from the side menu to get the answer in JSON format.
