@@ -13,7 +13,7 @@ This project represents the first step in understanding how well Large Language 
 ## Getting Started
 - Clone the repository to your local machine:
 ```shell
-git clone https://github.com/TheDataCity/LLM_Exploration_OpenAI.git
+git clone https://github.com/TheKola/LLM_Exploration_OpenAI.git
 ```
 - Set up and activate the virtual environment:
 ```shell
