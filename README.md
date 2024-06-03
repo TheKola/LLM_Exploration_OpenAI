@@ -46,3 +46,13 @@ streamlit run main.py
 - Choose a company from the dropdown menu.
 - Enter your question in the chat input.
 - Chat with the chatbot to get information about the selected company.
+
+## Contributing
+Contributions are welcome! Please read the [contributing guidelines](CONTRIBUTING.md) for more details.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+This project was developed at The Data City.
+
